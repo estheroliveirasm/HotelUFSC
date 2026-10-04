@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>JanelaSobre</class>
+ <widget class="QDialog" name="JanelaSobre">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>440</width>
+    <height>560</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sobre o Desenvolvedor</string>
+  </property>
+  <property name="objectName">
+   <string>JanelaSobre</string>
+  </property>
+  <layout class="QVBoxLayout" name="sobreRootLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+
+   <item>
+    <widget class="QFrame" name="sobreBannerFrame">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>90</height>
+      </size>
+     </property>
+     <property name="objectName">
+      <string>sobreBannerFrame</string>
+     </property>
+     <layout class="QVBoxLayout" name="sobreBannerLayout">
+      <item>
+       <widget class="QLabel" name="sobreTituloLabel">
+        <property name="text">
+         <string>Sobre o Desenvolvedor</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="objectName">
+         <string>sobreTituloLabel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+
+   <item>
+    <layout class="QVBoxLayout" name="sobreConteudoLayout">
+     <property name="spacing">
+      <number>10</number>
+     </property>
+     <property name="leftMargin">
+      <number>32</number>
+     </property>
+     <property name="topMargin">
+      <number>26</number>
+     </property>
+     <property name="rightMargin">
+      <number>32</number>
+     </property>
+     <property name="bottomMargin">
+      <number>26</number>
+     </property>
+
+     <item>
+      <layout class="QHBoxLayout" name="fotoCentralizadaLayout">
+       <item>
+        <spacer name="fotoEsquerdaSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="fotoDesenvolvedorLabel">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>150</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>150</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>FOTO</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="objectName">
+          <string>fotoDesenvolvedorLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="fotoDireitaSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+
+     <item>
+      <spacer name="posFotoSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>14</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+
+     <item>
+      <widget class="QFrame" name="infoCardFrame">
+       <property name="objectName">
+        <string>infoCardFrame</string>
+       </property>
+       <layout class="QVBoxLayout" name="infoCardLayout">
+        <property name="spacing">
+         <number>10</number>
+        </property>
+        <property name="leftMargin">
+         <number>20</number>
+        </property>
+        <property name="topMargin">
+         <number>18</number>
+        </property>
+        <property name="rightMargin">
+         <number>20</number>
+        </property>
+        <property name="bottomMargin">
+         <number>18</number>
+        </property>
+
+        <item>
+         <widget class="QLabel" name="projetoLabel">
+          <property name="text">
+           <string>Projeto: Trabalho Final T2 - Gerenciador de Rede Hoteleira</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+          <property name="objectName">
+           <string>projetoLabel</string>
+          </property>
+         </widget>
+        </item>
+
+        <item>
+         <widget class="QLabel" name="nomeDesenvolvedorLabel">
+          <property name="text">
+           <string>Nome do Desenvolvedor: [Insira Seu Nome Aqui]</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+          <property name="objectName">
+           <string>nomeDesenvolvedorLabel</string>
+          </property>
+         </widget>
+        </item>
+
+        <item>
+         <widget class="QLabel" name="matriculaLabel">
+          <property name="text">
+           <string>Matrícula: [Insira Sua Matrícula Aqui]</string>
+          </property>
+          <property name="objectName">
+           <string>matriculaLabel</string>
+          </property>
+         </widget>
+        </item>
+
+        <item>
+         <widget class="QLabel" name="cursoLabel">
+          <property name="text">
+           <string>Curso: Engenharia da Computação / LP2</string>
+          </property>
+          <property name="objectName">
+           <string>cursoLabel</string>
+          </property>
+         </widget>
+        </item>
+
+       </layout>
+      </widget>
+     </item>
+
+     <item>
+      <spacer name="preFecharSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>14</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+
+     <item>
+      <widget class="QPushButton" name="fecharButton">
+       <property name="text">
+        <string>Fechar</string>
+       </property>
+       <property name="objectName">
+        <string>fecharButton</string>
+       </property>
+      </widget>
+     </item>
+
+    </layout>
+   </item>
+
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>fecharButton</sender>
+   <signal>clicked()</signal>
+   <receiver>JanelaSobre</receiver>
+   <slot>accept()</slot>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>JanelaPrincipal</class>
+ <widget class="QMainWindow" name="JanelaPrincipal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>560</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>HotelUFSC - Painel de Controle</string>
+  </property>
+  <property name="objectName">
+   <string>JanelaPrincipal</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="rootLayout">
+    <property name="spacing">
+     <number>12</number>
+    </property>
+    <property name="leftMargin">
+     <number>16</number>
+    </property>
+    <property name="topMargin">
+     <number>16</number>
+    </property>
+    <property name="rightMargin">
+     <number>16</number>
+    </property>
+    <property name="bottomMargin">
+     <number>16</number>
+    </property>
+
+    <item>
+     <widget class="QFrame" name="dashboardHeaderFrame">
+      <property name="objectName">
+       <string>dashboardHeaderFrame</string>
+      </property>
+      <layout class="QVBoxLayout" name="dashboardHeaderLayout">
+       <item>
+        <widget class="QLabel" name="dashboardTituloLabel">
+         <property name="text">
+          <string>HotelUFSC — Painel de Controle</string>
+         </property>
+         <property name="objectName">
+          <string>dashboardTituloLabel</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+
+    <item>
+     <widget class="QGroupBox" name="hospedeAtualGroupBox">
+      <property name="title">
+       <string>Hóspede Atual</string>
+      </property>
+      <layout class="QHBoxLayout" name="hospedeAtualLayout">
+       <item>
+        <widget class="QLabel" name="indicadorStatusLabel">
+         <property name="minimumSize">
+          <size>
+           <width>14</width>
+           <height>14</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>14</width>
+           <height>14</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="objectName">
+          <string>indicadorStatusLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="hospedeAtualLabel">
+         <property name="text">
+          <string>Nenhum hóspede cadastrado no momento.</string>
+         </property>
+         <property name="objectName">
+          <string>hospedeAtualLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="hospedeAtualSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="cadastrarHospedeButton">
+         <property name="text">
+          <string>Cadastrar Hóspede</string>
+         </property>
+         <property name="objectName">
+          <string>cadastrarHospedeButton</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+
+    <item>
+     <layout class="QHBoxLayout" name="topSectionLayout">
+      <property name="spacing">
+       <number>16</number>
+      </property>
+
+      <item>
+       <widget class="QGroupBox" name="reservaGroupBox">
+        <property name="title">
+         <string>Dados da Reserva</string>
+        </property>
+        <layout class="QFormLayout" name="reservaFormLayout">
+         <item row="0" column="0">
+          <widget class="QLabel" name="categoriaFieldLabel">
+           <property name="text">
+            <string>Categoria do quarto:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QComboBox" name="categoriaQuartoComboBox">
+           <property name="objectName">
+            <string>categoriaQuartoComboBox</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="quartoFieldLabel">
+           <property name="text">
+            <string>Número do quarto:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QComboBox" name="numeroQuartoComboBox">
+           <property name="objectName">
+            <string>numeroQuartoComboBox</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="duracaoFieldLabel">
+           <property name="text">
+            <string>Duração da estadia (diárias):</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QSpinBox" name="duracaoEstadiaSpinBox">
+           <property name="objectName">
+            <string>duracaoEstadiaSpinBox</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+
+      <item>
+       <widget class="QGroupBox" name="extrasGroupBox">
+        <property name="title">
+         <string>Serviços Extras</string>
+        </property>
+        <layout class="QVBoxLayout" name="extrasOuterLayout">
+         <item>
+          <layout class="QGridLayout" name="extrasGridLayout">
+           <item row="0" column="0">
+            <widget class="QCheckBox" name="manobristaCheckBox">
+             <property name="text">
+              <string>Manobrista (R$ 30,00)</string>
+             </property>
+             <property name="objectName">
+              <string>manobristaCheckBox</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QCheckBox" name="spaCheckBox">
+             <property name="text">
+              <string>Acesso ao Spa (R$ 50,00)</string>
+             </property>
+             <property name="objectName">
+              <string>spaCheckBox</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QCheckBox" name="buffetCheckBox">
+             <property name="text">
+              <string>Buffet Completo (R$ 45,00)</string>
+             </property>
+             <property name="objectName">
+              <string>buffetCheckBox</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QCheckBox" name="wifiPremiumCheckBox">
+             <property name="text">
+              <string>Wi-Fi Premium (R$ 15,00)</string>
+             </property>
+             <property name="objectName">
+              <string>wifiPremiumCheckBox</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QCheckBox" name="lateCheckoutCheckBox">
+             <property name="text">
+              <string>Late Check-out (R$ 40,00)</string>
+             </property>
+             <property name="objectName">
+              <string>lateCheckoutCheckBox</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QCheckBox" name="academiaCheckBox">
+             <property name="text">
+              <string>Academia (R$ 25,00)</string>
+             </property>
+             <property name="objectName">
+              <string>academiaCheckBox</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QCheckBox" name="salaReuniaoCheckBox">
+             <property name="text">
+              <string>Sala de Reunião (R$ 70,00)</string>
+             </property>
+             <property name="objectName">
+              <string>salaReuniaoCheckBox</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QCheckBox" name="salaJogosCheckBox">
+             <property name="text">
+              <string>Sala de Jogos (R$ 20,00)</string>
+             </property>
+             <property name="objectName">
+              <string>salaJogosCheckBox</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QCheckBox" name="piscinaCheckBox">
+             <property name="text">
+              <string>Piscina (R$ 35,00)</string>
+             </property>
+             <property name="objectName">
+              <string>piscinaCheckBox</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QCheckBox" name="recreacaoCheckBox">
+             <property name="text">
+              <string>Recreação (R$ 25,00)</string>
+             </property>
+             <property name="objectName">
+              <string>recreacaoCheckBox</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="totalLabel">
+           <property name="text">
+            <string>Valor Total: R$ 0,00</string>
+           </property>
+           <property name="objectName">
+            <string>totalLabel</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+
+     </layout>
+    </item>
+
+    <item>
+     <layout class="QHBoxLayout" name="actionButtonsLayout">
+      <item>
+       <widget class="QPushButton" name="fazerCheckInButton">
+        <property name="text">
+         <string>Fazer Check-in</string>
+        </property>
+        <property name="objectName">
+         <string>fazerCheckInButton</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="verReservasButton">
+        <property name="text">
+         <string>Ver Reservas Ativas</string>
+        </property>
+        <property name="objectName">
+         <string>verReservasButton</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="actionButtonsSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="sobreDesenvolvedorButton">
+        <property name="text">
+         <string>Sobre o Desenvolvedor</string>
+        </property>
+        <property name="objectName">
+         <string>sobreDesenvolvedorButton</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

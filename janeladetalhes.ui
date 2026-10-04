@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>JanelaDetalhes</class>
+ <widget class="QDialog" name="JanelaDetalhes">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>420</width>
+    <height>460</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Detalhes da Reserva</string>
+  </property>
+  <property name="objectName">
+   <string>JanelaDetalhes</string>
+  </property>
+  <layout class="QVBoxLayout" name="detalhesRootLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+
+   <item>
+    <widget class="QFrame" name="detalhesBannerFrame">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>64</height>
+      </size>
+     </property>
+     <property name="objectName">
+      <string>detalhesBannerFrame</string>
+     </property>
+     <layout class="QVBoxLayout" name="detalhesBannerLayout">
+      <item>
+       <widget class="QLabel" name="detalhesTituloLabel">
+        <property name="text">
+         <string>Detalhes da Reserva</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="objectName">
+         <string>detalhesTituloLabel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+
+   <item>
+    <layout class="QVBoxLayout" name="detalhesConteudoLayout">
+     <property name="leftMargin">
+      <number>26</number>
+     </property>
+     <property name="topMargin">
+      <number>22</number>
+     </property>
+     <property name="rightMargin">
+      <number>26</number>
+     </property>
+     <property name="bottomMargin">
+      <number>22</number>
+     </property>
+
+     <item>
+      <widget class="QFrame" name="detalhesCardFrame">
+       <property name="objectName">
+        <string>detalhesCardFrame</string>
+       </property>
+       <layout class="QFormLayout" name="detalhesFormLayout">
+        <property name="verticalSpacing">
+         <number>10</number>
+        </property>
+        <property name="leftMargin">
+         <number>18</number>
+        </property>
+        <property name="topMargin">
+         <number>16</number>
+        </property>
+        <property name="rightMargin">
+         <number>18</number>
+        </property>
+        <property name="bottomMargin">
+         <number>16</number>
+        </property>
+
+        <item row="0" column="0">
+         <widget class="QLabel" name="nomeRotuloLabel">
+          <property name="text">
+           <string>Hóspede:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="nomeValorLabel">
+          <property name="text">
+           <string>-</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+          <property name="objectName">
+           <string>nomeValorLabel</string>
+          </property>
+         </widget>
+        </item>
+
+        <item row="1" column="0">
+         <widget class="QLabel" name="cpfRotuloLabel">
+          <property name="text">
+           <string>CPF:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLabel" name="cpfValorLabel">
+          <property name="text">
+           <string>-</string>
+          </property>
+          <property name="objectName">
+           <string>cpfValorLabel</string>
+          </property>
+         </widget>
+        </item>
+
+        <item row="2" column="0">
+         <widget class="QLabel" name="telefoneRotuloLabel">
+          <property name="text">
+           <string>Telefone:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLabel" name="telefoneValorLabel">
+          <property name="text">
+           <string>-</string>
+          </property>
+          <property name="objectName">
+           <string>telefoneValorLabel</string>
+          </property>
+         </widget>
+        </item>
+
+        <item row="3" column="0">
+         <widget class="QLabel" name="veiculoRotuloLabel">
+          <property name="text">
+           <string>Veículo:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLabel" name="veiculoValorLabel">
+          <property name="text">
+           <string>-</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+          <property name="objectName">
+           <string>veiculoValorLabel</string>
+          </property>
+         </widget>
+        </item>
+
+        <item row="4" column="0">
+         <widget class="QLabel" name="categoriaRotuloLabel">
+          <property name="text">
+           <string>Categoria:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLabel" name="categoriaValorLabel">
+          <property name="text">
+           <string>-</string>
+          </property>
+          <property name="objectName">
+           <string>categoriaValorLabel</string>
+          </property>
+         </widget>
+        </item>
+
+        <item row="5" column="0">
+         <widget class="QLabel" name="quartoRotuloLabel">
+          <property name="text">
+           <string>Número do quarto:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QLabel" name="quartoValorLabel">
+          <property name="text">
+           <string>-</string>
+          </property>
+          <property name="objectName">
+           <string>quartoValorLabel</string>
+          </property>
+         </widget>
+        </item>
+
+        <item row="6" column="0">
+         <widget class="QLabel" name="duracaoRotuloLabel">
+          <property name="text">
+           <string>Duração da estadia:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QLabel" name="duracaoValorLabel">
+          <property name="text">
+           <string>-</string>
+          </property>
+          <property name="objectName">
+           <string>duracaoValorLabel</string>
+          </property>
+         </widget>
+        </item>
+
+        <item row="7" column="0">
+         <widget class="QLabel" name="extrasRotuloLabel">
+          <property name="text">
+           <string>Serviços extras:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="QLabel" name="extrasValorLabel">
+          <property name="text">
+           <string>-</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+          <property name="objectName">
+           <string>extrasValorLabel</string>
+          </property>
+         </widget>
+        </item>
+
+        <item row="8" column="0">
+         <widget class="QLabel" name="totalRotuloLabel">
+          <property name="text">
+           <string>Valor total:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QLabel" name="totalValorLabel">
+          <property name="text">
+           <string>-</string>
+          </property>
+          <property name="objectName">
+           <string>totalValorLabel</string>
+          </property>
+         </widget>
+        </item>
+
+       </layout>
+      </widget>
+     </item>
+
+     <item>
+      <spacer name="detalhesSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>10</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+
+     <item>
+      <widget class="QPushButton" name="fecharButton">
+       <property name="text">
+        <string>Fechar</string>
+       </property>
+       <property name="objectName">
+        <string>fecharButton</string>
+       </property>
+      </widget>
+     </item>
+
+    </layout>
+   </item>
+
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

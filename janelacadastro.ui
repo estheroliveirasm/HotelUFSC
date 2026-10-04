@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>JanelaCadastro</class>
+ <widget class="QDialog" name="JanelaCadastro">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>420</width>
+    <height>430</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Cadastro de Hóspede</string>
+  </property>
+  <property name="objectName">
+   <string>JanelaCadastro</string>
+  </property>
+  <layout class="QVBoxLayout" name="cadastroRootLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+
+   <item>
+    <widget class="QFrame" name="cadastroBannerFrame">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>64</height>
+      </size>
+     </property>
+     <property name="objectName">
+      <string>cadastroBannerFrame</string>
+     </property>
+     <layout class="QVBoxLayout" name="cadastroBannerLayout">
+      <item>
+       <widget class="QLabel" name="cadastroTituloLabel">
+        <property name="text">
+         <string>Cadastro de Hóspede</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="objectName">
+         <string>cadastroTituloLabel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+
+   <item>
+    <layout class="QVBoxLayout" name="cadastroFormOuterLayout">
+     <property name="spacing">
+      <number>14</number>
+     </property>
+     <property name="leftMargin">
+      <number>26</number>
+     </property>
+     <property name="topMargin">
+      <number>22</number>
+     </property>
+     <property name="rightMargin">
+      <number>26</number>
+     </property>
+     <property name="bottomMargin">
+      <number>22</number>
+     </property>
+
+     <item>
+      <layout class="QFormLayout" name="cadastroFormLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="nomeCompletoFieldLabel">
+         <property name="text">
+          <string>Nome completo:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="nomeCompletoLineEdit">
+         <property name="placeholderText">
+          <string>Digite o nome completo do hóspede</string>
+         </property>
+         <property name="objectName">
+          <string>nomeCompletoLineEdit</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="cpfFieldLabel">
+         <property name="text">
+          <string>CPF:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="cpfLineEdit">
+         <property name="placeholderText">
+          <string>000.000.000-00</string>
+         </property>
+         <property name="objectName">
+          <string>cpfLineEdit</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="telefoneFieldLabel">
+         <property name="text">
+          <string>Telefone:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="telefoneLineEdit">
+         <property name="placeholderText">
+          <string>(00) 00000-0000</string>
+         </property>
+         <property name="objectName">
+          <string>telefoneLineEdit</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+
+     <item>
+      <widget class="QFrame" name="veiculoFrame">
+       <property name="objectName">
+        <string>veiculoFrame</string>
+       </property>
+       <layout class="QVBoxLayout" name="veiculoLayout">
+        <item>
+         <widget class="QCheckBox" name="possuiVeiculoCheckBox">
+          <property name="text">
+           <string>O hóspede possui veículo?</string>
+          </property>
+          <property name="objectName">
+           <string>possuiVeiculoCheckBox</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QFormLayout" name="placaFormLayout">
+          <item row="0" column="0">
+           <widget class="QLabel" name="placaFieldLabel">
+            <property name="text">
+             <string>Placa do veículo:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="placaLineEdit">
+            <property name="placeholderText">
+             <string>ABC-1234</string>
+            </property>
+            <property name="objectName">
+             <string>placaLineEdit</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+
+     <item>
+      <spacer name="cadastroSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>10</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+
+     <item>
+      <layout class="QHBoxLayout" name="cadastroBotoesLayout">
+       <item>
+        <widget class="QPushButton" name="cancelarButton">
+         <property name="text">
+          <string>Cancelar</string>
+         </property>
+         <property name="objectName">
+          <string>cancelarButton</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="confirmarButton">
+         <property name="text">
+          <string>Confirmar Cadastro</string>
+         </property>
+         <property name="objectName">
+          <string>confirmarButton</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+
+    </layout>
+   </item>
+
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
